@@ -16,7 +16,7 @@ config/name_localized={
 "es": "Botánico a Bordo",
 "pt_BR": "Botânico a Bordo"
 }
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
@@ -27,6 +27,10 @@ project/assembly_name="Botanist on Board"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [input]
 

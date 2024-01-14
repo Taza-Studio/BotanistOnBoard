@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://qpmut2gm4bsh"]
+[gd_scene load_steps=2 format=3 uid="uid://qpmut2gm4bsh"]
+
+[ext_resource type="Script" path="res://scripts/PlayerManager.cs" id="1_ou4tb"]
 
 [node name="3D Root Node" type="Node3D"]
+
+[node name="Player Manager" type="Node3D" parent="."]
+script = ExtResource("1_ou4tb")
