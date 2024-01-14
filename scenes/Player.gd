@@ -10,7 +10,7 @@ var mouse_sensitivity = 1 # TODO: Move to an options/settings file
 # Variables for camera bob
 var bobbing_activated = true # TODO: Move to an options/settings file
 const BOBBING_FREQUENCY = 2.0
-const BOBBING_AMPLITUDE = 0.08
+const BOBBING_AMPLITUDE = 0.05
 var t_bob = 0.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
