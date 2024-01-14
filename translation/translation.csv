@@ -1,6 +1,6 @@
 key,en,es,pt_BR
 LANGUAGE_NAME,English,español,português (brasileiro)
-LANGUAGE_DIRECTIOn,ltr,ltr,ltr
+LANGUAGE_DIRECTION,ltr,ltr,ltr
 GAME_TITLE,Botanist on Board,Botánico a Bordo,Botânico a Bordo
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta
 INPUT_WALK_LEFT,Walk Left,Ametrallar a la izquierda,Andar para esquerda
@@ -28,8 +28,8 @@ INPUT_KEY_MOUSE3,Middle Mouse Button,[Translation Needed],Botão do meio do mous
 INPUT_KEY_SHIFT,{direction} Shift,[{direction} Translation Needed],{direction} Shift
 INPUT_KEY_SPACEBAR,Space,Espacio,Espaço
 INPUT_KEY_ESCAPE,ESC,Escape,Esc
-INPUT_KEY_CONTROL,{direction} Ctrl,[{direction} Translation Needed],[{direction} Ctrl
-INPUT_KEY_ALT,{direction} Alt/Option,[{direction} Translation Needed],[{direction} Alt/Opção
+INPUT_KEY_CONTROL,{direction} Ctrl,[{direction} Translation Needed],{direction} Ctrl
+INPUT_KEY_ALT,{direction} Alt/Option,[{direction} Translation Needed],{direction} Alt/Opção
 DIRECTION_LEFT,Left,Izquierda,Esquerda
 DIRECTION_RIGHT,Right,Derecha,Direita
 GAME_INVENTORY_ITEM,Item,Objeto,Item
