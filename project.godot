@@ -11,6 +11,11 @@ config_version=5
 [application]
 
 config/name="Botanist on Board"
+config/name_localized={
+"en": "Botanist on Board",
+"es": "Botánico a Bordo",
+"pt_BR": "Botânico a Bordo"
+}
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
