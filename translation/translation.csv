@@ -2,3 +2,14 @@ key,en,es,pt_BR
 LANGUAGE_NAME,English,español,português (brasileiro)
 GAME_TITLE,Botanist on Board,Botánico a Bordo,Botânico a Bordo
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta
+INPUT_WALK_LEFT,Walk Left,Ametrallar a la derecha,[Translation Needed]
+INPUT_WALK_RIGHT,Walk Right,Ametrallar a la izquierda,[Translation Needed]
+INPUT_WALK_FORWARD,Walk Forwards,Caminar,[Translation Needed]
+INPUT_WALK_BACKWARD,Walk Backwards,Retroceder,[Translation Needed]
+INPUT_USE,Use,Usar,Usar
+INPUT_INTERACT,Interact,Interactuar,Interagir
+INPUT_OPEN_JOURNAL,Open Journal,Abrir su Cuaderno,Abrir seu Caderneta
+INPUT_PAUSE,Pause Game,Pausar el Juego,Pausar o Jogo
+UI_QUIT_DESKTOP,Quit to Desktop,Cerrar,[Translation Needed]
+UI_QUIT_MENU,Quit to Menu,Ir al Menú,[Translation Needed]
+UI_UNPAUSE,Unpause,Reanudar,[Translation Needed]
