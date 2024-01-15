@@ -33,6 +33,15 @@ MENU_QUIT_DESKTOP,Quit to Desktop,Cerrar,Sair do Jogo
 MENU_QUIT_MENU,Quit to Menu,Ir al Menú,Ir para o Menu
 MENU_QUIT_WINDOW,Close,Cerrar,Fechar
 MENU_UNPAUSE,Unpause,Reanudar,Voltar ao Jogo
+MENU_OPTIONS,Options,Opciones,Opções
+MENU_OPTIONS_CONTROLS,Controls,Controles,Controles
+MENU_OPTIONS_DISPLAY,Display,Pantalla,Tela
+MENU_OPTIONS_FOV,FOV,FOV,Campo de visão (FOV)
+MENU_OPTIONS_FULLSCREEN,Fullscreen,Pantalla completa,Tela cheia
+MENU_OPTIONS_MUSIC_VOLUME,Music volume,Volumen de la música,Volume da música
+MENU_OPTIONS_SOUND,Sound Options,Opciones de sonido,Opções de Som
+MENU_OPTIONS_VIDEO,Video Options,Opciones de vídeo,Opções de Vídeo
+MENU_OPTIONS_WINDOWED,Windowed,Ventana,Janela
 MENU_LABEL_NO,No,No,Não
 MENU_LABEL_YES,Yes,Sí,Sim
 MENU_LABEL_OKAY,Okay,[Translation Needed],Ok
