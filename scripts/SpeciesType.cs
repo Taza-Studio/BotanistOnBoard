@@ -4,5 +4,5 @@ using System;
 public abstract class SpeciesType
 {
 	public int speciesUUID;
-	public Texture GetPrint();
+	public abstract Texture GetPrint();
 }
