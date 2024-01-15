@@ -2,16 +2,16 @@ key,en,es,pt_BR
 LANGUAGE_NAME,English,español,português (brasileiro)
 LANGUAGE_DIRECTION,ltr,ltr,ltr
 GAME_TITLE,Botanist on Board,Botánico a Bordo,Botânico a Bordo
-STUDIO_TITLE,Taza Studio,[Translation Needed],[Translation Needed]
+STUDIO_TITLE,Taza Studio,[Translation Needed],Taza Studio
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta
-JOURNAL_TEXT_SCIENTIFIC_NAME,Scientific Name,Nombre Científico,[Translation Needed]
-JOURNAL_TEXT_COMMON_NAME,Common Name,Nombre Común,[Translation Needed]
-JOURNAL_TEXT_EDIBILITY,Edibility,Comestibilidad,[Translation Needed]
-JOURNAL_TEXT_DESCRIPTION,Description,Descripción,[Translation Needed]
+JOURNAL_TEXT_SCIENTIFIC_NAME,Scientific Name,Nombre Científico,Nome Científico 
+JOURNAL_TEXT_COMMON_NAME,Common Name,Nombre Común,Nome Comum
+JOURNAL_TEXT_EDIBILITY,Edibility,Comestibilidad,Comestibilidade
+JOURNAL_TEXT_DESCRIPTION,Description,Descripción,Descrição 
 JOURNAL_TEXT_SPOREPRINT,Spore Print,Esporada,Esporada
-JOURNAL_TEXT_IMPRESSION,Leaf Print,Impresión,[Translation Needed]
-JOURNAL_TEXT_SKETCH,Sketch,Bosquejo,[Translation Needed]
-JOURNAL_UI_PAGE,p. {number},pág. {number},[Abbreviation Needed: página {number}]
+JOURNAL_TEXT_IMPRESSION,Leaf Print,Impresión,Impressão 
+JOURNAL_TEXT_SKETCH,Sketch,Bosquejo,Esboço 
+JOURNAL_UI_PAGE,p. {number},pág. {number},pág. {number}
 INPUT_WALK_LEFT,Walk Left,Ametrallar a la izquierda,Andar para esquerda
 INPUT_WALK_RIGHT,Walk Right,Ametrallar a la derecha,Andar para direita
 INPUT_WALK_FORWARD,Walk Forwards,Caminar,Andar para frente
