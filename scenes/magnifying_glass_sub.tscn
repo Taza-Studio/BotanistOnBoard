@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://d24put8nr87oy"]
+
+[ext_resource type="ArrayMesh" uid="uid://d2mk5r7o3fb13" path="res://models/glass.obj" id="1_aala8"]
+[ext_resource type="Script" path="res://scripts/Zoom.gd" id="2_1ad5m"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_sacsa"]
+viewport_path = NodePath("Magnifier")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lnqv"]
+resource_local_to_scene = true
+shading_mode = 0
+albedo_color = Color(0.682353, 0.8, 0.894118, 1)
+albedo_texture = SubResource("ViewportTexture_sacsa")
+texture_filter = 0
+disable_receive_shadows = true
+
+[node name="MagnifyingGlass" type="MeshInstance3D"]
+transform = Transform3D(0.0120309, 0.00621564, -0.249633, 0.0311947, 0.247927, 0.00767658, 0.247754, -0.0315183, 0.0111556, -0.029748, -0.269271, -0.557493)
+mesh = ExtResource("1_aala8")
+skeleton = NodePath("../../..")
+surface_material_override/5 = SubResource("StandardMaterial3D_3lnqv")
+script = ExtResource("2_1ad5m")
+
+[node name="Magnifier" type="SubViewport" parent="."]
+use_hdr_2d = true
+fsr_sharpness = 2.0
+canvas_item_default_texture_filter = 0
+size = Vector2i(900, 900)
+
+[node name="ZoomCamera" type="Camera3D" parent="Magnifier"]
+fov = 30.0
+
+[node name="CameraPos" type="Node3D" parent="."]
+transform = Transform3D(-7.45058e-09, -1.19209e-07, 1, -1, -4.47035e-08, -5.21541e-08, 2.23517e-08, -1, -5.96046e-08, -0.585914, 0.858116, -0.167724)
