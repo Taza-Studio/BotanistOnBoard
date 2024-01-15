@@ -11,10 +11,11 @@ list of conditions, and the following disclaimer.
 this list of conditions, and the following disclaimer in the documentation 
 and/or other materials provided with the distribution.
 
-3. Redistributions used commercially by anyone other than the copyright holders
-or publishers holding a right to be exempt from this condition must be
-modified to state on the Title Screen that the original unmodified version 
-can be used at no cost, linking to any of its official distribution channels.
+3. Redistributions used commercially by anyone other than the copyright
+holders or publishers holding a right to be exempt from this condition, must
+state on all of its distribution channels (i.e. a website) that the original
+version can be used at no cost, linking to any one of the original version's
+official distribution channels.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS”
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
