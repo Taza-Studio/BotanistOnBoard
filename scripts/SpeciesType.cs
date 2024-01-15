@@ -3,5 +3,6 @@ using System;
 
 public abstract class SpeciesType
 {
-	public long speciesUUID;
+	public int speciesUUID;
+	public Texture GetPrint();
 }

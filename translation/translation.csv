@@ -11,6 +11,10 @@ JOURNAL_TEXT_SPOREPRINT,Spore Print,Esporada,Impressão
 JOURNAL_TEXT_IMPRESSION,Leaf Print,Impresión,Impressão
 JOURNAL_TEXT_PAWPRINT,Pawprint,Huella,Pegada
 JOURNAL_TEXT_WING,Glue wing here.,Encole el ala aquí.,Cole a asa aqui.
+JOURNAL_TEXT_QUEEN,Sketch of queen.,[Translation Needed],[Translation Needed]
+JOURNAL_TEXT_FISHSCALE,Glue scale here.,[Translation Needed],[Translation Needed]
+JOURNAL_TEXT_WEB,Sketch of web pattern.,[Translation Needed],[Translation Needed]
+JOURNAL_TEXT_FEATHER,Feather,Pluma,[Translation Needed]
 JOURNAL_TEXT_SKETCH,Sketch,Bosquejo,Esboço
 JOURNAL_UI_PAGE,p. {number},pág. {number},pág. {number}
 INPUT_WALK_LEFT,Walk Left,Ametrallar a la izquierda,Andar para esquerda
@@ -60,7 +64,7 @@ ACCESSIBILITY_COLOR_CHARTREUSE,Chartreuse,Cartujo,Verde Oliva
 ACCESSIBILITY_COLOR_GREEN,Green,Verde,Verde
 ACCESSIBILITY_COLOR_LIME,Lime,Lima,Verde Limão
 ACCESSIBILITY_COLOR_CYAN,Cyan,Cian,Ciano
-ACCESSIBILITY_COLOR_LIGHT_BLUE,Aqua,Cerúleo,Azul Celeste 
+ACCESSIBILITY_COLOR_LIGHT_BLUE,Aqua,Cerúleo,Azul Celeste
 ACCESSIBILITY_COLOR_DARK_BLUE,Blue,Azul,Azul
 ACCESSIBILITY_COLOR_VIOLET,Violet,Violeta,Violeta
-ACCESSIBILITY_COLOR_FUCHSIA,Fuchsia,Magenta,Magenta 
+ACCESSIBILITY_COLOR_FUCHSIA,Fuchsia,Magenta,Magenta
