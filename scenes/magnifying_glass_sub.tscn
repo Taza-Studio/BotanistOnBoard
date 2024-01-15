@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d24put8nr87oy"]
 
 [ext_resource type="ArrayMesh" uid="uid://d2mk5r7o3fb13" path="res://models/glass.obj" id="1_aala8"]
-[ext_resource type="Script" path="res://scenes/Zoom.gd" id="2_qwouu"]
+[ext_resource type="Script" path="res://scripts/Zoom.gd" id="2_1ad5m"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_sacsa"]
 viewport_path = NodePath("Magnifier")
@@ -19,7 +19,7 @@ transform = Transform3D(0.0120309, 0.00621564, -0.249633, 0.0311947, 0.247927, 0
 mesh = ExtResource("1_aala8")
 skeleton = NodePath("../../..")
 surface_material_override/5 = SubResource("StandardMaterial3D_3lnqv")
-script = ExtResource("2_qwouu")
+script = ExtResource("2_1ad5m")
 
 [node name="Magnifier" type="SubViewport" parent="."]
 use_hdr_2d = true
