@@ -46,3 +46,21 @@ GAME_INVENTORY_ITEM,Item,Objeto,Item
 GAME_INVENTORY_DROP,Drop,Soltar,Largar
 GAME_INVENTORY_YOU_CANNOT_CARRY_ANY_MORE,You cannot carry any more.,No puedes llevar nada más.,Você não pode carregar mais nada.
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta
+ACCESSIBILITY_COLOR_BLACK,Black,Negro,[Translation Needed]
+ACCESSIBILITY_COLOR_WHITE,White,Blanco,[Translation Needed]
+ACCESSIBILITY_COLOR_SILVER,Silver,Gris,[Translation Needed]
+ACCESSIBILITY_COLOR_PINK,Pink,Rosado,[Translation Needed]
+ACCESSIBILITY_COLOR_RED,Red,Rojo,[Translation Needed]
+ACCESSIBILITY_COLOR_CRIMSON,Crimson,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_ORANGE,Orange,Anaranjado,[Translation Needed]
+ACCESSIBILITY_COLOR_BROWN,Brown,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_YELLOW,Yellow,Amarillo,[Translation Needed]
+ACCESSIBILITY_COLOR_MUSTARD,Mustard,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_CHARTREUSE,Chartreuse,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_GREEN,Green,Verde,[Translation Needed]
+ACCESSIBILITY_COLOR_LIME,Lime,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_CYAN,Cyan,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_LIGHT_BLUE,Aqua,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_DARK_BLUE,Blue,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_VIOLET,Violet,[Translation Needed],[Translation Needed]
+ACCESSIBILITY_COLOR_FUCHSIA,Fuchsia,[Translation Needed],[Translation Needed]
