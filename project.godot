@@ -102,3 +102,8 @@ sprint={
 [internationalization]
 
 locale/translations=PackedStringArray("res://translation/translation.en.translation", "res://translation/translation.es.translation", "res://translation/translation.pt_BR.translation")
+
+[layer_names]
+
+3d_physics/layer_1="World"
+3d_physics/layer_2="Player"
