@@ -3,6 +3,7 @@ extends Node3D
 func _ready():
 	$EscapeMenu.hide()
 	$EscapeMenu.set_process(false)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _process(delta):
 	if Input.is_action_just_pressed("pause"):
