@@ -31,7 +31,10 @@ viewport_path = NodePath("SubViewportContainer/SubViewport/Player/Head/Camera3D/
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lnqv"]
 resource_local_to_scene = true
 shading_mode = 0
+albedo_color = Color(0.682353, 0.8, 0.894118, 1)
 albedo_texture = SubResource("ViewportTexture_kas48")
+texture_filter = 0
+disable_receive_shadows = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v555y"]
 albedo_color = Color(1, 0, 0, 1)
@@ -96,8 +99,10 @@ surface_material_override/5 = SubResource("StandardMaterial3D_3lnqv")
 script = ExtResource("5_dl1of")
 
 [node name="Magnifier" type="SubViewport" parent="SubViewportContainer/SubViewport/Player/Head/Camera3D/MagnifyingGlass"]
+use_hdr_2d = true
+fsr_sharpness = 2.0
 canvas_item_default_texture_filter = 0
-size = Vector2i(128, 128)
+size = Vector2i(900, 900)
 
 [node name="ZoomCamera" type="Camera3D" parent="SubViewportContainer/SubViewport/Player/Head/Camera3D/MagnifyingGlass/Magnifier"]
 fov = 30.0
