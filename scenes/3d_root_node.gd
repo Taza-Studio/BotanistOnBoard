@@ -5,7 +5,7 @@ func _ready():
 	$EscapeMenu.set_process(false)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-func _process(delta):
+func _process(_delta):
 	if get_node("SubViewportContainer/SubViewport/Player").position.y < -50:
 		get_node("SubViewportContainer/SubViewport/Player").position.y = 10
 		get_node("SubViewportContainer/SubViewport/Player").position.x = 5
