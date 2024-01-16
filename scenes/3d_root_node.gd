@@ -6,6 +6,10 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _process(delta):
+	if get_node("SubViewportContainer/SubViewport/Player").position.y < -50:
+		get_node("SubViewportContainer/SubViewport/Player").position.y = 10
+		get_node("SubViewportContainer/SubViewport/Player").position.x = 5
+		get_node("SubViewportContainer/SubViewport/Player").position.z = 5
 	if Input.is_action_just_pressed("pause"):
 		if get_node("EscapeMenu").is_visible():
 			$EscapeMenu.set_process(false)

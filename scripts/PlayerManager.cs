@@ -44,7 +44,7 @@ public partial class PlayerManager : Node3D
 	
 	public override void _Ready()
 	{
-		
+		AddChild(Mushroom.CreateMushroomModel(true, 0, 0, new ColorType(0), new ColorType(0), new ColorType(0), new ColorType(0), new Texture()));
 	}
 
 	public override void _Process(double delta)

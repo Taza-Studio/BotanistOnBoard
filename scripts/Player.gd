@@ -33,6 +33,12 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+	# Handle crouch.
+	if Input.is_action_pressed("crouch"):
+		head.position.y = 1
+	else:
+		head.position.y = 1.838
 
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir = Input.get_vector("walk_left", "walk_right", "walk_forward", "walk_backward")

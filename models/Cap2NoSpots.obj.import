@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dybywm6rk3e8"
+path="res://.godot/imported/Cap2NoSpots.obj-249d9f4888874500551999b7b4faf0aa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cap2NoSpots.obj-249d9f4888874500551999b7b4faf0aa.mesh"]
+
+source_file="res://models/Cap2NoSpots.obj"
+dest_files=["res://.godot/imported/Cap2NoSpots.obj-249d9f4888874500551999b7b4faf0aa.mesh", "res://.godot/imported/Cap2NoSpots.obj-249d9f4888874500551999b7b4faf0aa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

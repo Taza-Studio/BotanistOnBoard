@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1ifol123l4fr"
+path="res://.godot/imported/Cap3.obj-b9486e566d20ec4f2a08ca29498f415d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cap3.obj-b9486e566d20ec4f2a08ca29498f415d.mesh"]
+
+source_file="res://models/Cap3.obj"
+dest_files=["res://.godot/imported/Cap3.obj-b9486e566d20ec4f2a08ca29498f415d.mesh", "res://.godot/imported/Cap3.obj-b9486e566d20ec4f2a08ca29498f415d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
