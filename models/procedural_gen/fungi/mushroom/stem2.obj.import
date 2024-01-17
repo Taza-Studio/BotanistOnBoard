@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgovdacd8l4lh"
+path="res://.godot/imported/stem2.obj-92d1b9e9f6261f2d6de994b1b74d732b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stem2.obj-92d1b9e9f6261f2d6de994b1b74d732b.mesh"]
+
+source_file="res://models/procedural_gen/fungi/mushroom/stem2.obj"
+dest_files=["res://.godot/imported/stem2.obj-92d1b9e9f6261f2d6de994b1b74d732b.mesh", "res://.godot/imported/stem2.obj-92d1b9e9f6261f2d6de994b1b74d732b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

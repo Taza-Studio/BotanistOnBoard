@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnnk3yi35jbfn"
+path="res://.godot/imported/BoneHandle.obj-95a3b5540ec22e0cf042f735cb78aa8b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BoneHandle.obj-95a3b5540ec22e0cf042f735cb78aa8b.mesh"]
+
+source_file="res://models/BoneHandle.obj"
+dest_files=["res://.godot/imported/BoneHandle.obj-95a3b5540ec22e0cf042f735cb78aa8b.mesh", "res://.godot/imported/BoneHandle.obj-95a3b5540ec22e0cf042f735cb78aa8b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

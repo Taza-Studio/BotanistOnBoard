@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cc1xw1pun61rw"
+path="res://.godot/imported/cap1s.obj-2f9c34555a274d6e6a449783f4dcf6f2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cap1s.obj-2f9c34555a274d6e6a449783f4dcf6f2.mesh"]
+
+source_file="res://models/procedural_gen/fungi/mushroom/cap1s.obj"
+dest_files=["res://.godot/imported/cap1s.obj-2f9c34555a274d6e6a449783f4dcf6f2.mesh", "res://.godot/imported/cap1s.obj-2f9c34555a274d6e6a449783f4dcf6f2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
