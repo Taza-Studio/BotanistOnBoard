@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwonikk458h5q"]
 
-[ext_resource type="Script" path="res://scenes/escape_menu.gd" id="1_530c0"]
+[ext_resource type="Script" path="res://scripts/escape_menu.gd" id="1_530c0"]
 
 [sub_resource type="Theme" id="Theme_0taya"]
 default_font_size = 30
