@@ -8,6 +8,7 @@ export(String, "BLACK", "WHITE", "SILVER", "PINK", "RED", "CRIMSON", "ORANGE", "
 export(String, "BLACK", "WHITE", "SILVER", "PINK", "RED", "CRIMSON", "ORANGE", "BROWN", "YELLOW", "MUSTARD", "CHARTREUSE", "GREEN", "LIME", "CYAN", "LIGHT_BLUE", "DARK_BLUE", "VIOLET", "FUCHSIA") var cap_color
 export(String, "BLACK", "WHITE", "SILVER", "PINK", "RED", "CRIMSON", "ORANGE", "BROWN", "YELLOW", "MUSTARD", "CHARTREUSE", "GREEN", "LIME", "CYAN", "LIGHT_BLUE", "DARK_BLUE", "VIOLET", "FUCHSIA") var cap_color_aux
 
+# Returns Basic Mushroom Model (no transform tuning yet)
 func get_model():
     var cap = MeshInstance3D.new()
     var stem = MeshInstance3D.new()
