@@ -1,28 +1,20 @@
 extends "Fungi.gd"
-
+var Utils = preload("res://scripts/Utils.gd")
 # Bitflags for the model specifications
 # Allows for 32 different variations
 export(int, FLAGS, "Spotted", "StemTypeBitA", "StepTypeBitB", "CapTypeBitA", "CapTypeBitB") var model_specs
 # Enums for the three colors
-export(String, "BLACK", "WHITE", "SILVER", "PINK", "RED", "CRIMSON", "ORANGE", "BROWN", "YELLOW", "MUSTARD", "CHARTREUSE", "GREEN", "LIME", "CYAN", "LIGHT_BLUE", "DARK_BLUE", "VIOLET", "FUCHSIA") var stem_color
-export(String, "BLACK", "WHITE", "SILVER", "PINK", "RED", "CRIMSON", "ORANGE", "BROWN", "YELLOW", "MUSTARD", "CHARTREUSE", "GREEN", "LIME", "CYAN", "LIGHT_BLUE", "DARK_BLUE", "VIOLET", "FUCHSIA") var cap_color
-export(String, "BLACK", "WHITE", "SILVER", "PINK", "RED", "CRIMSON", "ORANGE", "BROWN", "YELLOW", "MUSTARD", "CHARTREUSE", "GREEN", "LIME", "CYAN", "LIGHT_BLUE", "DARK_BLUE", "VIOLET", "FUCHSIA") var cap_color_aux
+var stem_color:int
+var cap_color:int
+var cap_color_aux:int
 
-# Returns Basic Mushroom Model (no transform tuning yet)
-func get_model():
-    var cap = MeshInstance3D.new()
-    var stem = MeshInstance3D.new()
-   
-    var stem_file_location = "res://models/procedural_gen/stem%d.obj"
-    stem.mesh = load(stem_file_location % ((model_specs << 1) % 4))
-    stem.set_surface_material_override(0,load("res://materials/%s.tres" % stem_color))
-    var cap_file_location = "res://models/procedural_gen/cap%d%s.obj"
-    var cap_s = "s" if (model_specs % 2 == 1) else "n"
-    cpa.mesh = load(stem_file_location % [((model_specs << 3) % 4), cap_s])
-    cap.set_surface_material_override(0,load("res://materials/%s.tres" % cap_color))
-    cap.set_surface_material_override(1,load("res://materials/%s.tres" % cap_color_aux))
-    cap.add_child(stem)
-    return cap
+func _init(model_specs:int, stem_color:int, cap_color:int, cap_color_aux:int).(edibility).(speciesUUID)
+    self.model_specs = model_specs
+    self.stem_color = stem_color
+    self.cap_color = cap_color
+    self.cap_color_aux = cap_color_aux
+    self.edibility = edibility
+    self.speciesUUID = speciesUUID
 
 # TODO: Spore Print Generation
 

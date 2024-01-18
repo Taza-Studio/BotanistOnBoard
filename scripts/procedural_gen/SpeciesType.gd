@@ -1,7 +1,7 @@
-var speciesUUID
+var speciesUUID:int
 
-func get_model():
-    return
+func _init(speciesUUID:int)
+    self.speciesUUID = speciesUUID
 
 func get_print():
     return
