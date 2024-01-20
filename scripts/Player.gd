@@ -18,7 +18,6 @@ var gravity = 9.8
 
 @onready var head = $Head
 @onready var cam = $Head/Camera3D
-@onready var glass = $Head/Camera3D/MagnifyingGlass
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -63,7 +62,6 @@ func _physics_process(delta):
 	if not bobbing_activated:
 		t_bob = 0.0
 	cam.transform.origin = headbob(t_bob)
-	glass.transform.origin = headbob(t_bob) * -0.5
 
 	move_and_slide()
 	

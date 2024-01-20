@@ -17,14 +17,14 @@ func _process(delta):
 		volume_db += 100 * delta
 
 
-func _on_combat_mus_area_body_entered(body):
+func _on_combat_mus_area_body_entered(_body):
 	combat_music = true
 
-func _on_building_mus_area_body_entered(body):
+func _on_building_mus_area_body_entered(_body):
 	building_music = true
 
-func _on_combat_mus_area_body_exited(body):
+func _on_combat_mus_area_body_exited(_body):
 	combat_music = false
 
-func _on_building_mus_area_body_exited(body):
+func _on_building_mus_area_body_exited(_body):
 	building_music = false
