@@ -14,5 +14,6 @@ func _init():
 func add_item(item:ItemSlot):
 	if (items.size() <= SLOTS):
 		items.append(item)
-	else
+	else:
 		# TODO: GAME_INVENTORY_YOU_CANNOT_CARRY_ANY_MORE
+		pass

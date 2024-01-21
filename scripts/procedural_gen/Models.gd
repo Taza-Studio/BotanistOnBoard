@@ -12,6 +12,6 @@ static func mushroom(shroom:Mushroom) -> MeshInstance3D:
 	cap.set_surface_override_material(0,load("res://materials/%s.tres" % shroom.cap_color))
 	if shroom.spotted:
 		cap.set_surface_override_material(2,load("res://materials/%s.tres" % shroom.cap_color_aux))
-	stem.position.y = -0.2
+	cap.position.y = 0.2
 	stem.add_child(cap)
 	return stem
