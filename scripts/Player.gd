@@ -107,7 +107,7 @@ func _physics_process(delta):
 		
 	# Head bobbing
 	t_bob += delta * velocity.length() * float(is_on_floor())
-	if not bobbing_activated:
+	if (not bobbing_activated) or (is_on_wall()):
 		t_bob = 0.0
 	cam.transform.origin = headbob(t_bob)
 
