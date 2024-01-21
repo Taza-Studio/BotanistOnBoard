@@ -101,6 +101,7 @@ sprint={
 
 [internationalization]
 
+locale/translation_remaps={}
 locale/translations=PackedStringArray("res://translation/translation.en.translation", "res://translation/translation.es.translation", "res://translation/translation.pt_BR.translation")
 
 [layer_names]
