@@ -18,21 +18,54 @@ const BOBBING_AMPLITUDE = 0.05
 var hunger = 100.0
 var health = 100.0
 
+@onready var head = $Head
+@onready var cam = $Head/Camera3D
+
 # Inventory
 var inventory:Inventory = Inventory.new()
+var item = null
+@onready var cam_default_childcount = cam.get_child_count()
 
 # Camera Bob
 var t_bob = 0.0
 
-@onready var head = $Head
-@onready var cam = $Head/Camera3D
 #endregion
 
 func _ready():
-	inventory.add_item(ItemSlot.new(load("res://scenes/items/magnifying_glass.tscn").instantiate(),1,"ITEM_MAGNIFYING_GLASS",load("res://textures/test_image.png")))
+	inventory.item0  = ItemSlot.new(load("res://scenes/items/magnifying_glass.tscn"),1,"ITEM_MAGNIFYING_GLASS",load("res://textures/test_image.png"))
 
 func _process(_delta):
-	inventory.update()
+	#region Inventory
+	if Input.is_action_pressed("inventory_1"):
+		inventory.selected = 0
+	elif Input.is_action_pressed("inventory_2"):
+		inventory.selected = 1
+	elif Input.is_action_pressed("inventory_3"):
+		inventory.selected = 2
+	elif Input.is_action_pressed("inventory_4"):
+		inventory.selected = 3
+	elif Input.is_action_pressed("inventory_5"):
+		inventory.selected = 4
+	elif Input.is_action_pressed("inventory_6"):
+		inventory.selected = 5
+	elif Input.is_action_pressed("inventory_7"):
+		inventory.selected = 6
+	elif Input.is_action_pressed("inventory_8"):
+		inventory.selected = 7
+	elif Input.is_action_pressed("inventory_9"):
+		inventory.selected = 8
+	elif Input.is_action_pressed("inventory_0"):
+		inventory.selected = 9
+		
+	if (item != inventory.get_selected_slot()):
+		if (cam.get_child_count() != cam_default_childcount):
+			cam.get_child(cam_default_childcount).queue_free()
+		item = inventory.get_selected_slot()
+		if (item != null):
+			cam.add_child(item.item.instantiate())
+		
+
+	#endregion
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
