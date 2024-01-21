@@ -5,7 +5,10 @@ const SPEED = 5.0
 const SPRINT_MULTIPLIER = 1.3
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY_MULTIPLIER = 0.01
+
 var mouse_sensitivity = 1 # TODO: Move to an options/settings file
+var hunger = 100.0
+var health = 100.0
 
 # Variables for camera bob
 var bobbing_activated = true # TODO: Move to an options/settings file
