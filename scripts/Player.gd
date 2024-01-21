@@ -1,26 +1,32 @@
 extends CharacterBody3D
 
-
+#region Constants
 const SPEED = 5.0
 const SPRINT_MULTIPLIER = 1.3
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY_MULTIPLIER = 0.01
+const GRAVITY = 9.8
+const BOBBING_FREQUENCY = 2.0
+const BOBBING_AMPLITUDE = 0.05
+#endregion
 
-var mouse_sensitivity = 1 # TODO: Move to an options/settings file
+#region Variables
+#Options - to be replaced by a dediated options script
+@export var mouse_sensitivity = 1 # TODO: Move to an options/settings file
+@export var bobbing_activated = true # TODO: Move to an options/settings file
+
 var hunger = 100.0
 var health = 100.0
 
-# Variables for camera bob
-var bobbing_activated = true # TODO: Move to an options/settings file
-const BOBBING_FREQUENCY = 2.0
-const BOBBING_AMPLITUDE = 0.05
-var t_bob = 0.0
+# Inventory
+var inventory:Inventory = Inventory.new()
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = 9.8
+# Camera Bob
+var t_bob = 0.0
 
 @onready var head = $Head
 @onready var cam = $Head/Camera3D
+#endregion
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -31,7 +37,7 @@ func _unhandled_input(event):
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
-		velocity.y -= gravity * delta
+		velocity.y -= GRAVITY * delta
 
 	# Handle jump.
 	if Input.is_action_pressed("jump") and is_on_floor():
