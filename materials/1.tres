@@ -1,3 +1,4 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://72ulh6xtywhi"]
 
 [resource]
+roughness = 0.35
