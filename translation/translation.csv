@@ -11,10 +11,10 @@ JOURNAL_TEXT_SPOREPRINT,Spore Print,Esporada,Impressão
 JOURNAL_TEXT_IMPRESSION,Leaf Print,Impresión,Impressão
 JOURNAL_TEXT_PAWPRINT,Pawprint,Huella,Pegada
 JOURNAL_TEXT_WING,Glue wing here.,Encole el ala aquí.,Cole a asa aqui.
-JOURNAL_TEXT_QUEEN,Sketch of queen.,[Translation Needed],[Translation Needed]
-JOURNAL_TEXT_FISHSCALE,Glue scale here.,[Translation Needed],[Translation Needed]
-JOURNAL_TEXT_WEB,Sketch of web pattern.,[Translation Needed],[Translation Needed]
-JOURNAL_TEXT_FEATHER,Feather,Pluma,[Translation Needed]
+JOURNAL_TEXT_QUEEN,Sketch of queen.,[Translation Needed],Esboço da rainha.
+JOURNAL_TEXT_FISHSCALE,Glue scale here.,[Translation Needed],Cole escamas aqui.
+JOURNAL_TEXT_WEB,Sketch of web pattern.,[Translation Needed],Esboço da teia
+JOURNAL_TEXT_FEATHER,Feather,Pluma,Pena
 JOURNAL_TEXT_SKETCH,Sketch,Bosquejo,Esboço
 JOURNAL_UI_PAGE,p. {number},pág. {number},pág. {number}
 INPUT_WALK_LEFT,Walk Left,Ametrallar a la izquierda,Andar para esquerda
@@ -77,4 +77,4 @@ DARK_BLUE,Blue,Azul,Azul
 VIOLET,Violet,Violeta,Violeta
 FUCHSIA,Fuchsia,Magenta,Magenta
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta
-ITEM_MAGNIFYING_GLASS,Magnifying Glass,[Translation Needed],[Translation Needed]
+ITEM_MAGNIFYING_GLASS,Magnifying Glass,[Translation Needed],Lupa
