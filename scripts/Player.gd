@@ -54,7 +54,7 @@ func _process(_delta):
 		inventory.selected = 7
 	elif Input.is_action_pressed("inventory_9"):
 		inventory.selected = 8
-	elif Input.is_action_pressed("inventory_0"):
+	elif Input.is_action_pressed("inventory_10"):
 		inventory.selected = 9
 		
 	if (item != inventory.get_selected_slot()):
