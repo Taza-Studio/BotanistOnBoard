@@ -28,6 +28,12 @@ var t_bob = 0.0
 @onready var cam = $Head/Camera3D
 #endregion
 
+func _ready():
+	inventory.add_item(ItemSlot.new(load("res://scenes/items/magnifying_glass.tscn").instantiate(),1,"ITEM_MAGNIFYING_GLASS",load("res://textures/test_image.png")))
+
+func _process(_delta):
+	inventory.update()
+
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * SENSITIVITY_MULTIPLIER * mouse_sensitivity)

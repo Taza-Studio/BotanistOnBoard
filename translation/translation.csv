@@ -58,7 +58,6 @@ DIRECTION_RIGHT,Right,Derecha,Direita
 GAME_INVENTORY_ITEM,Item,Objeto,Item
 GAME_INVENTORY_DROP,Drop,Soltar,Largar
 GAME_INVENTORY_YOU_CANNOT_CARRY_ANY_MORE,You cannot carry any more.,No puedes llevar nada más.,Você não pode carregar mais nada.
-ITEM_JOURNAL,Journal,Cuaderno,Caderneta
 BLACK,Black,Negro,Preto
 WHITE,White,Blanco,Branco
 SILVER,Silver,Gris,Cinza
@@ -77,3 +76,5 @@ LIGHT_BLUE,Aqua,Cerúleo,Azul Celeste
 DARK_BLUE,Blue,Azul,Azul
 VIOLET,Violet,Violeta,Violeta
 FUCHSIA,Fuchsia,Magenta,Magenta
+ITEM_JOURNAL,Journal,Cuaderno,Caderneta
+ITEM_MAGNIFYING_GLASS,Magnifying Glass,[Translation Needed],[Translation Needed]
