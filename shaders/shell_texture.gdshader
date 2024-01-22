@@ -35,13 +35,13 @@ void fragment()
 	
 	float lod_resolution = resolution;
 	
-	lod_resolution = 1.0 / (1.0 + exp2(round(distance/lod) - 9.0));
+	lod_resolution = 1.0 / (1.0 + exp(round(distance/lod) - 10.0));
 	lod_resolution *= resolution;
-	
-	if (random(round(world_position.xz * lod_resolution) / lod_resolution) >= height_coeff * (world_position.y - height_offset)) {
-		ALBEDO = mix(color1, color2, 2.5 * (world_position.y - height_offset));
+	ALBEDO = mix(color1, color2, 2.5 * (world_position.y - height_offset));
+	if (random(floor(world_position.xz * lod_resolution) / lod_resolution) >= height_coeff * (world_position.y - height_offset)) {
+		
 	} else {
-		discard;
+		ALPHA = 0.02;
 	}
 	
     
