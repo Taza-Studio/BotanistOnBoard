@@ -23,4 +23,4 @@ func _notification(what):
 	if what == NOTIFICATION_APPLICATION_FOCUS_OUT:
 		$EscapeMenu.set_process(true)
 		$EscapeMenu.show()
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE) 

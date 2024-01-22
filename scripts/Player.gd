@@ -33,6 +33,8 @@ var t_bob = 0.0
 
 func _ready():
 	inventory.item0  = ItemSlot.new(load("res://scenes/items/magnifying_glass.tscn"),1,"ITEM_MAGNIFYING_GLASS",load("res://textures/test_image.png"))
+	inventory.item1  = ItemSlot.new(load("res://scenes/items/knife.tscn"),1,"ITEM_KNIFE",load("res://textures/test_image.png"))
+	pass
 
 func _process(_delta):
 	#region Inventory
@@ -106,10 +108,16 @@ func _physics_process(delta):
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 3.0)
 		
 	# Head bobbing
-	t_bob += delta * velocity.length() * float(is_on_floor())
-	if (not bobbing_activated) or (is_on_wall()):
+	t_bob += delta * velocity.length() * (1 - float(is_on_wall())) * float(is_on_floor())
+	if bobbing_activated:
+		if (t_bob >= 2 * PI):
+			t_bob -= 2*PI
+	else:
 		t_bob = 0.0
 	cam.transform.origin = headbob(t_bob)
+	if (cam.get_child_count() != cam_default_childcount):
+			var cam_item = cam.get_child(cam_default_childcount)
+			cam_item.transform.origin = headbob(t_bob + 1.1)/1.7 # Offset cycle and decrease amplitude
 
 	move_and_slide()
 	
