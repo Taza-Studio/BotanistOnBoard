@@ -2,7 +2,7 @@ key,en,es,pt_BR,pl
 LANGUAGE_NAME,English,español,português (brasileiro),polski
 LANGUAGE_DIRECTION,ltr,ltr,ltr,ltr
 GAME_TITLE,Botanist on Board,Botánico a Bordo,Botânico a Bordo,Botanik Na Pokładzie
-STUDIO_TITLE,Taza Studio,[],Taza Studio,Taza Studio
+STUDIO_TITLE,Taza Studio,Taza Studio,Taza Studio,Taza Studio
 JOURNAL_TEXT_SCIENTIFIC_NAME,Scientific Name,Nombre Científico,Nome Científico,Nazwa naukowa
 JOURNAL_TEXT_COMMON_NAME,Common Name,Nombre Común,Nome Comum,Nazwa zwyczajowa
 JOURNAL_TEXT_EDIBILITY,Edibility,Comestibilidad,Comestibilidade,Jadalność
@@ -11,9 +11,9 @@ JOURNAL_TEXT_SPOREPRINT,Spore Print,Esporada,Impressão,Wysyp zarodników
 JOURNAL_TEXT_IMPRESSION,Leaf Print,Impresión,Impressão,Odcisk
 JOURNAL_TEXT_PAWPRINT,Pawprint,Huella,Pegada,Odcisk łapy
 JOURNAL_TEXT_WING,Glue wing here.,Encole el ala aquí.,Cole a asa aqui.,Tu przyklej skrzydło.
-JOURNAL_TEXT_QUEEN,Sketch of queen.,[],Esboço da rainha.,Szkic królowej.
-JOURNAL_TEXT_FISHSCALE,Glue scale here.,[],Cole escamas aqui.,Tu przyklej łuskę.
-JOURNAL_TEXT_WEB,Sketch of web pattern.,[],Esboço da teia,Szkic pajęczyny.
+JOURNAL_TEXT_QUEEN,Sketch of queen.,Boceto de reina.,Esboço da rainha.,Szkic królowej.
+JOURNAL_TEXT_FISHSCALE,Glue scale here.,Encole la escama aqui.,Cole escamas aqui.,Tu przyklej łuskę.
+JOURNAL_TEXT_WEB,Sketch of web pattern.,Boceto de telaraña.,Esboço da teia.,Szkic pajęczyny.
 JOURNAL_TEXT_FEATHER,Feather,Pluma,Pena,Pióro
 JOURNAL_TEXT_SKETCH,Sketch,Bosquejo,Esboço,Szkic
 JOURNAL_UI_PAGE,p. {number},pág. {number},pág. {number},str. {number}
@@ -44,15 +44,15 @@ MENU_OPTIONS_VIDEO,Video Options,Opciones de vídeo,Opções de Vídeo,Ustawieni
 MENU_OPTIONS_WINDOWED,Windowed,Ventana,Janela,Okno
 MENU_LABEL_NO,No,No,Não,Nie
 MENU_LABEL_YES,Yes,Sí,Sim,Tak
-MENU_LABEL_OKAY,Okay,[],Ok,Ok
-INPUT_KEY_MOUSE1,Left Mouse Button,[],Botão esquerdo do mouse,Lewy przycisk myszy
-INPUT_KEY_MOUSE2,Right Mouse Button,[],Botão direito do mouse,Prawy przycisk myszy
-INPUT_KEY_MOUSE3,Middle Mouse Button,[],Botão do meio do mouse,Środkowy przycisk myszy
-INPUT_KEY_SHIFT,{direction} Shift,[{direction} Translation Needed],{direction} Shift,[{direction}]
+MENU_LABEL_OKAY,Okay,Ok,Ok,Ok
+INPUT_KEY_MOUSE1,Left Mouse Button,Botón izquierdo del ratón,Botão esquerdo do mouse,Lewy przycisk myszy
+INPUT_KEY_MOUSE2,Right Mouse Button,Botón derecho del ratón,Botão direito do mouse,Prawy przycisk myszy
+INPUT_KEY_MOUSE3,Middle Mouse Button,Botón central del ratón,Botão do meio do mouse,Środkowy przycisk myszy
+INPUT_KEY_SHIFT,{direction} Shift,Shift de la {direction},{direction} Shift,[{direction}]
 INPUT_KEY_SPACEBAR,Space,Espacio,Espaço,Spacja
 INPUT_KEY_ESCAPE,ESC,Escape,Esc,Escape
-INPUT_KEY_CONTROL,{direction} Ctrl,[{direction} Translation Needed],{direction} Ctrl,{direction} control
-INPUT_KEY_ALT,{direction} Alt/Option,[{direction} Translation Needed],{direction} Alt/Opção,{direction} alt
+INPUT_KEY_CONTROL,{direction} Ctrl,Ctrl de la {direction},{direction} Ctrl,{direction} control
+INPUT_KEY_ALT,{direction} Alt/Option,Alt/Opción de la {direction},{direction} Alt/Opção,{direction} alt
 DIRECTION_LEFT,Left,Izquierda,Esquerda,Lewy
 DIRECTION_RIGHT,Right,Derecha,Direita,Prawy
 GAME_INVENTORY_ITEM,Item,Objeto,Item,Przedmiot
@@ -75,6 +75,24 @@ CYAN,Cyan,Cian,Ciano,Cyjanowy
 LIGHT_BLUE,Aqua,Cerúleo,Azul Celeste,Błękitny
 DARK_BLUE,Blue,Azul,Azul,Niebieski
 VIOLET,Violet,Violeta,Violeta,Fioletowy
-FUCHSIA,Fuchsia,Magenta,Magenta,[]
+FUCHSIA,Magenta,Magenta,Magenta,Magenta
+KINGDOM_FUNGI,Fungi,[],[],[]
+CLADE_MUSHROOM,Mushroom,[],[],[]
+CLADE_MOLD,Mold,[],[],[]
+CLADE_SHELF_MUSHROOM,Shelf Mushroom,[],[],[]
+CLADE_LICHEN,Lichen,[],[],[]
+KINGDOM_FAUNA,Fauna,[],[],[]
+CLADE_COLONY_INSECT,Colony Insect,[],[],[]
+CLADE_SPIDER,Spider,[],[],[]
+CLADE_FLYING_INSECT,Flying Insect,[],[],[]
+CLADE_NONFLYING_INSECT,Insect,[],[],[]
+CLADE_FISH,Fish,[],[],[]
+CLADE_MAMMAL,Mammal,[],[],[]
+CLADE_BIRD,Bird,[],[],[]
+KINGDOM_FLORA,Flora,[],[],[]
+CLADE_GRASS,Grass,[],[],[]
+CLADE_TREE,Tree,[],[],[]
+CLADE_SHRUB,Shrub,[],[],[]
+CLADE_FLOWER,Flower,[],[],[]
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta,Dziennik
-ITEM_MAGNIFYING_GLASS,Magnifying Glass,[],Lupa,Lupa
+ITEM_MAGNIFYING_GLASS,Magnifying Glass,Lupa,Lupa,Lupa
