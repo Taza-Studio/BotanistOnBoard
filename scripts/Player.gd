@@ -65,7 +65,6 @@ func _process(_delta):
 		item = inventory.get_selected_slot()
 		if (item != null):
 			cam.add_child(item.item.instantiate())
-		
 
 	#endregion
 
