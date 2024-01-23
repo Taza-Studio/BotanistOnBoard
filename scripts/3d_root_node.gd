@@ -17,22 +17,19 @@ func _process(_delta):
 		get_node("SubViewportContainer/SubViewport/Player").position.z = 5
 	if Input.is_action_just_pressed("pause"):
 		hide_all()
-		if escapemenu.is_visible():
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		else:
+		if not escapemenu.is_visible():
 			escapemenu.set_process(true)
 			escapemenu.show()
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	elif Input.is_action_just_pressed("open_inv"):
 		hide_all()
-		if inventory_gui.is_visible():
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		else:
+		if not inventory_gui.is_visible():
 			inventory_gui.set_process(true)
 			inventory_gui.show()
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			
 func hide_all():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	escapemenu.set_process(false)
 	escapemenu.hide()
 	inventory_gui.set_process(false)
