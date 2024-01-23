@@ -2,21 +2,18 @@ extends Node3D
 
 @onready var escapemenu = $EscapeMenu
 @onready var inventory_gui = $Inventory
+@onready var player = $Player
 
 func _ready():
-	escapemenu.hide()
-	escapemenu.set_process(false)
-	inventory_gui.hide()
-	inventory_gui.set_process(false)
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	hide_all()
 
 func _process(_delta):
 	#region Debug
 	#	if player falls of edge, teleport them to the center of the plane
-	if get_node("SubViewportContainer/SubViewport/Player").position.y < -50:
-		get_node("SubViewportContainer/SubViewport/Player").position.y = 10
-		get_node("SubViewportContainer/SubViewport/Player").position.x = 5
-		get_node("SubViewportContainer/SubViewport/Player").position.z = 5
+	if player.position.y < -50:
+		player.position.x = 5
+		player.position.y = 10
+		player.position.z = 5
 	#endregion
 	
 	#region Handle UI Inputs
@@ -43,8 +40,7 @@ func hide_all():
 			
 func _notification(what):
 	if what == NOTIFICATION_APPLICATION_FOCUS_OUT:
+		hide_all()
 		escapemenu.set_process(true)
 		escapemenu.show()
-		inventory_gui.set_process(false)
-		inventory_gui.hide()
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE) 
