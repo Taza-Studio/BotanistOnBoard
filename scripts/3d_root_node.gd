@@ -2,7 +2,7 @@ extends Node3D
 
 @onready var escapemenu = $EscapeMenu
 @onready var inventory_gui = $Inventory
-@onready var player = $Player
+@onready var player = $SubViewportContainer/SubViewport/Player
 
 func _ready():
 	hide_all()
