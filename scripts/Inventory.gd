@@ -19,8 +19,8 @@ var selected:int = 0
 # TODO: func add/remove_item(item:String):
 
 # Yes I know this is ugly.
-func get_selected_slot() -> ItemSlot:
-	match selected:
+func get_slot(s:int) -> ItemSlot:
+	match s:
 		0:
 			return item0
 		1:
@@ -42,6 +42,7 @@ func get_selected_slot() -> ItemSlot:
 		9:
 			return item9
 		_:
-			selected = clamp(selected, 0, 9)
-			return get_selected_slot()
+			return get_slot(clamp(s, 0, 9))
 	
+func get_selected_slot() -> ItemSlot:
+	return get_slot(selected)

@@ -19,7 +19,7 @@ var hunger = 100.0
 var health = 100.0
 
 @onready var head = $Head
-@onready var cam = $Head/Camera3D
+@onready var cam = $Head/MainCamera
 
 # Inventory
 var inventory:Inventory = Inventory.new()
