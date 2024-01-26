@@ -33,7 +33,7 @@ var t_bob = 0.0
 
 func _ready():
 	inventory.item0  = ItemSlot.new(load("res://scenes/items/magnifying_glass.tscn"),1,"ITEM_MAGNIFYING_GLASS",load("res://textures/test_image.png"))
-	inventory.item1  = ItemSlot.new(load("res://scenes/items/knife.tscn"),1,"ITEM_KNIFE",load("res://textures/test_image.png"))
+	inventory.item1  = ItemSlot.new(load("res://scenes/items/knife.tscn"),1,"ITEM_KNIFE",load("res://textures/test_image2.png"))
 	pass
 
 func _process(_delta):
