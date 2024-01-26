@@ -38,6 +38,7 @@ func hide_all():
 	escapemenu.hide()
 	inventory_gui.set_process(false)
 	inventory_gui.hide()
+	player.inventory.selected_for_swap = -1
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			
 func _notification(what):
