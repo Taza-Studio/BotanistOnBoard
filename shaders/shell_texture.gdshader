@@ -30,7 +30,7 @@ void vertex()
 	}
 	
 	if (gravity) {
-		VERTEX.y -= 0.1 * actual_height * height_coeff;
+		VERTEX.y -= 0.15 * actual_height * height_coeff;
 	}
 }
 
@@ -46,7 +46,7 @@ void fragment()
 	
 	float lod_resolution = resolution;
 	
-	lod_resolution = 1.0 / (1.0 + exp(round(distance/50.0*distance/lod) - 10.0));
+	lod_resolution = 1.0 / (1.0 + exp(round(0.02*distance*distance/lod) - 10.0));
 	lod_resolution *= resolution;
 	ALBEDO = mix(color1, color2, 2.5 * (actual_height - height_offset));
 	if (random(floor(world_position.xz * lod_resolution) / lod_resolution) >= height_coeff * (actual_height - height_offset)) {
