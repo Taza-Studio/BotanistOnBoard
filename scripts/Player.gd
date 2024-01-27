@@ -21,10 +21,11 @@ var health = 100.0
 @onready var head = $Head
 @onready var cam = $Head/MainCamera
 
+
 # Inventory
 var inventory:Inventory = Inventory.new()
 var item = null
-@onready var cam_default_childcount = cam.get_child_count()
+@onready var hand = $Head/MainCamera/Hand
 
 # Camera Bob
 var t_bob = 0.0
@@ -60,11 +61,11 @@ func _process(_delta):
 		inventory.selected = 9
 		
 	if (item != inventory.get_selected_slot()):
-		if (cam.get_child_count() != cam_default_childcount):
-			cam.get_child(cam_default_childcount).queue_free()
+		if (hand.get_child_count() != 0):
+			hand.get_child(0).queue_free()
 		item = inventory.get_selected_slot()
 		if (item != null):
-			cam.add_child(item.item.instantiate())
+			hand.add_child(item.item.instantiate())
 
 	#endregion
 
@@ -114,9 +115,6 @@ func _physics_process(delta):
 	else:
 		t_bob = 0.0
 	cam.transform.origin = headbob(t_bob)
-	if (cam.get_child_count() != cam_default_childcount):
-			var cam_item = cam.get_child(cam_default_childcount)
-			cam_item.transform.origin = headbob(t_bob + 1.1)/1.7 # Offset cycle and decrease amplitude
 
 	move_and_slide()
 	
