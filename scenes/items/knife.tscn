@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://kve1w4c3oklw"]
+[gd_scene load_steps=3 format=3 uid="uid://kve1w4c3oklw"]
 
+[ext_resource type="Script" path="res://scripts/animation/ItemAnimator.gd" id="1_gwcrj"]
 [ext_resource type="ArrayMesh" uid="uid://dorwyxs0d3yc" path="res://models/CrystalKnife.obj" id="1_hmeo1"]
 
 [node name="Knife" type="Node3D"]
+script = ExtResource("1_gwcrj")
+item_animation_set = 1
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.9617, -0.471548, -0.0771283, 0.468593, 2.77178, 1.0477, -0.0934193, -1.04637, 2.81005, 0.175826, -0.387916, -0.459941)

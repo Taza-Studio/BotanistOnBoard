@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://s604rh7yuqxk"]
+[gd_scene load_steps=5 format=3 uid="uid://s604rh7yuqxk"]
 
 [ext_resource type="PackedScene" uid="uid://d24put8nr87oy" path="res://scenes/items/magnifying_glass_sub.tscn" id="1_olx3d"]
+[ext_resource type="Script" path="res://scripts/animation/ItemAnimator.gd" id="1_xj8jr"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_mg0bw"]
 viewport_path = NodePath("Magnifier")
@@ -14,6 +15,8 @@ texture_filter = 0
 disable_receive_shadows = true
 
 [node name="MagnifyingGlass" type="Node3D"]
+script = ExtResource("1_xj8jr")
+item_animation_set = 2
 
 [node name="MagnifyingGlass2" parent="." instance=ExtResource("1_olx3d")]
 surface_material_override/5 = SubResource("StandardMaterial3D_jabq1")
