@@ -5,8 +5,8 @@
 
 [node name="Knife" type="Node3D"]
 script = ExtResource("1_gwcrj")
-item_animation_set = 1
+item_animation_set = 2
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.9617, -0.471548, -0.0771283, 0.468593, 2.77178, 1.0477, -0.0934193, -1.04637, 2.81005, 0.175826, -0.387916, -0.459941)
+transform = Transform3D(2.99883, 0.0291981, -0.0785114, 0, 2.81185, 1.04572, 0.0837648, -1.04531, 2.81075, 0, 0, 0)
 mesh = ExtResource("1_hmeo1")

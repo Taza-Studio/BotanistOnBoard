@@ -16,7 +16,8 @@ disable_receive_shadows = true
 
 [node name="MagnifyingGlass" type="Node3D"]
 script = ExtResource("1_xj8jr")
-item_animation_set = 2
+item_animation_set = 1
 
 [node name="MagnifyingGlass2" parent="." instance=ExtResource("1_olx3d")]
+transform = Transform3D(0.0120309, 0.00621564, -0.249633, 0.0311947, 0.247927, 0.00767658, 0.247754, -0.0315183, 0.0111556, 0, 0, 0)
 surface_material_override/5 = SubResource("StandardMaterial3D_jabq1")
