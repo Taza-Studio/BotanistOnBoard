@@ -26,6 +26,7 @@ var health = 100.0
 var inventory:Inventory = Inventory.new()
 var item = null
 @onready var hand = $Head/MainCamera/Hand
+const hand_children_count = 1
 
 # Camera Bob
 var t_bob = 0.0
@@ -61,12 +62,14 @@ func _process(_delta):
 		inventory.selected = 9
 		
 	if (item != inventory.get_selected_slot()):
-		if (hand.get_child_count() != 0):
-			hand.get_child(0).queue_free()
+		if (hand.get_child_count() != hand_children_count):
+			hand.get_child(hand_children_count).queue_free()
 		item = inventory.get_selected_slot()
 		if (item != null):
-			hand.add_child(item.item.instantiate())
-
+			var new_item = item.item.instantiate()
+			new_item.visible = false
+			hand.add_child(new_item)
+			hand.position.y = -1
 	#endregion
 
 func _unhandled_input(event):
