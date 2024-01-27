@@ -14,6 +14,11 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("use"):
 		play("use")
+	elif event.is_action_pressed("inspect_item"):
+		play("inspect_item")
 
 func play(anim:String):
-	animation_player.play("Items.%d/%s" % [int(item_animation_set), anim])
+	if animation_player.has_animation("Items.%d/%s" % [int(item_animation_set), anim]):
+		animation_player.play("Items.%d/%s" % [int(item_animation_set), anim])
+	elif animation_player.has_animation("Items.0/%s" % anim):
+		animation_player.play("Items.0/%s" % anim)

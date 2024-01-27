@@ -67,7 +67,8 @@ func _process(_delta):
 			hand.get_child(hand_children_count).play("undraw")
 			hand.get_child(hand_children_count).set_process_input(false)
 			await get_tree().create_timer(0.3).timeout # Waits 0.3 seconds
-			hand.get_child(hand_children_count).queue_free()
+			if (hand.get_child_count() != hand_children_count): # Second check is necessary because the item may have been freed during the wait.
+				hand.get_child(hand_children_count).queue_free()
 		item = inventory.get_selected_slot()
 		if (item != null):
 			hand.get_child(0).current_animation = "[stop]"

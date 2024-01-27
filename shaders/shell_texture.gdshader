@@ -1,10 +1,12 @@
 shader_type spatial;
 
 uniform float resolution = 64.0;
+instance uniform float actual_height = 0.0;
 uniform float height_offset = 0.0;
 uniform float height_coeff = 7.5;
 uniform float lod = 6.0;
 uniform float cutoff = 30.0;
+
 
 uniform vec3 color1;
 uniform vec3 color2;
@@ -37,8 +39,8 @@ void fragment()
 	
 	lod_resolution = 1.0 / (1.0 + exp(round(distance/lod) - 10.0));
 	lod_resolution *= resolution;
-	ALBEDO = mix(color1, color2, 2.5 * (world_position.y - height_offset));
-	if (random(floor(world_position.xz * lod_resolution) / lod_resolution) >= height_coeff * (world_position.y - height_offset)) {
+	ALBEDO = mix(color1, color2, 2.5 * (actual_height - height_offset));
+	if (random(floor(world_position.xz * lod_resolution) / lod_resolution) >= height_coeff * (actual_height - height_offset)) {
 		
 	} else {
 		ALPHA = 0.02;
