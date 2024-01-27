@@ -30,7 +30,7 @@ void vertex()
 	}
 	
 	if (gravity) {
-		VERTEX.y -= 0.15 * actual_height * height_coeff;
+		VERTEX.y -= 0.25 * actual_height * height_coeff;
 	}
 }
 

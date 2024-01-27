@@ -9,4 +9,5 @@ item_animation_set = 2
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.99883, 0.0291981, -0.0785114, 0, 2.81185, 1.04572, 0.0837648, -1.04531, 2.81075, 0, 0, 0)
+sorting_offset = 2048.0
 mesh = ExtResource("1_hmeo1")

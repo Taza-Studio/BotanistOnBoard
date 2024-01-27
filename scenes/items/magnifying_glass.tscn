@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://s604rh7yuqxk"]
+[gd_scene load_steps=6 format=3 uid="uid://s604rh7yuqxk"]
 
-[ext_resource type="PackedScene" uid="uid://d24put8nr87oy" path="res://scenes/items/magnifying_glass_sub.tscn" id="1_olx3d"]
 [ext_resource type="Script" path="res://scripts/animation/ItemAnimator.gd" id="1_xj8jr"]
+[ext_resource type="ArrayMesh" uid="uid://d2mk5r7o3fb13" path="res://models/glass.obj" id="2_gisx8"]
+[ext_resource type="Script" path="res://scripts/Zoom.gd" id="3_u6g5l"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_mg0bw"]
-viewport_path = NodePath("Magnifier")
+viewport_path = NodePath("Mesh/Magnifier")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jabq1"]
 resource_local_to_scene = true
@@ -18,6 +19,21 @@ disable_receive_shadows = true
 script = ExtResource("1_xj8jr")
 item_animation_set = 1
 
-[node name="MagnifyingGlass2" parent="." instance=ExtResource("1_olx3d")]
+[node name="Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.0120309, 0.00621564, -0.249633, 0.0311947, 0.247927, 0.00767658, 0.247754, -0.0315183, 0.0111556, 0, 0, 0)
+mesh = ExtResource("2_gisx8")
+skeleton = NodePath("../../..")
 surface_material_override/5 = SubResource("StandardMaterial3D_jabq1")
+script = ExtResource("3_u6g5l")
+
+[node name="Magnifier" type="SubViewport" parent="Mesh"]
+use_hdr_2d = true
+fsr_sharpness = 2.0
+canvas_item_default_texture_filter = 0
+size = Vector2i(900, 900)
+
+[node name="ZoomCamera" type="Camera3D" parent="Mesh/Magnifier"]
+fov = 30.0
+
+[node name="CameraPos" type="Node3D" parent="Mesh"]
+transform = Transform3D(-7.45058e-09, -1.15484e-07, 1, -1, -4.09782e-08, -5.21541e-08, 2.65427e-08, -1, -6.70552e-08, -0.167775, 0.804922, -0.148897)
