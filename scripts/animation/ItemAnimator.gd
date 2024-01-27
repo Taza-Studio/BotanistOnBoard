@@ -7,5 +7,13 @@ enum ANIMATION_SET { DEFAULT, KNIFE, MAGNIFYING_GLASS }
 
 func _ready():
 	visible = true
-	animation_player.play("default")
+	play("draw")
+	await get_tree().create_timer(0.3).timeout # Waits 0.3 seconds
+	set_process_input(true)
 
+func _input(event):
+	if event.is_action_pressed("use"):
+		play("use")
+
+func play(anim:String):
+	animation_player.play("Items.%d/%s" % [int(item_animation_set), anim])

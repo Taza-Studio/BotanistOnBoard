@@ -62,14 +62,21 @@ func _process(_delta):
 		inventory.selected = 9
 		
 	if (item != inventory.get_selected_slot()):
+		
 		if (hand.get_child_count() != hand_children_count):
+			hand.get_child(hand_children_count).play("undraw")
+			hand.get_child(hand_children_count).set_process_input(false)
+			await get_tree().create_timer(0.3).timeout # Waits 0.3 seconds
 			hand.get_child(hand_children_count).queue_free()
 		item = inventory.get_selected_slot()
 		if (item != null):
+			hand.get_child(0).current_animation = "[stop]"
 			var new_item = item.item.instantiate()
 			new_item.visible = false
+			new_item.set_process_input(false)
 			hand.add_child(new_item)
-			hand.position.y = -1
+			hand.position.y = -0.8
+			
 	#endregion
 
 func _unhandled_input(event):
