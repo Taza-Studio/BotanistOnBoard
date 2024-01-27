@@ -1,7 +1,5 @@
 class_name Utils
 
-@export var test:int
-
 enum ColorType {
 	BLACK,
 	WHITE, 
