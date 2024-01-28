@@ -38,7 +38,7 @@ func _ready():
 	inventory.item1  = ItemSlot.new(load("res://scenes/items/knife.tscn"),1,"ITEM_KNIFE",load("res://textures/test_image2.png"))
 	pass
 
-func _process(_delta):
+func _process(delta):
 	#region Inventory
 	if Input.is_action_pressed("inventory_1"):
 		inventory.selected = 0
@@ -79,6 +79,8 @@ func _process(_delta):
 			hand.position.y = -1.3
 			
 	#endregion
+	
+	hunger -= delta
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:

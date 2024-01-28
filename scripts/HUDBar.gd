@@ -7,11 +7,6 @@ enum VALUE { NULL, HEALTH, HUNGER, OXYGEN }
 
 func _process(_delta):
 	match value_type:
-		VALUE.NULL:
-			value = 0
-		_:
-			value_type = VALUE.NULL
-			value = 0
 		VALUE.HEALTH:
 			value = player.health
 		VALUE.HUNGER:
