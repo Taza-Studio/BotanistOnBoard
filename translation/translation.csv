@@ -94,6 +94,8 @@ CLADE_GRASS,Grass,[],[],[]
 CLADE_TREE,Tree,[],[],[]
 CLADE_SHRUB,Shrub,[],[],[]
 CLADE_FLOWER,Flower,[],[],[]
+HUD_HEALTH,Health,Salud,[],[]
+HUD_HUNGER,Hunger,Hambre,[],[]
 ITEM_JOURNAL,Journal,Cuaderno,Caderneta,Dziennik
 ITEM_MAGNIFYING_GLASS,Magnifying Glass,Lupa,Lupa,Lupa
 ITEM_KNIFE,Knife,[],[],[]
